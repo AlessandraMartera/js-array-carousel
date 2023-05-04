@@ -14,21 +14,39 @@ Al click dell’utente sulle frecce, il programma cambierà l’immagine attiva,
 */
 const next = document.querySelector(".button.next");
 const before = document.querySelector(".button.before");
-const items = document.querySelectorAll(".item");
+const items = document.querySelectorAll("[class ^= img_ ]");
 
+const img = document.querySelector("[class ^= img_ ]");
 console.log(items);
 console.log(next);
 console.log(next);
 
+
+
 let count = 0;
+// button next img
+next.addEventListener("click",
+    function () {
+        if ( count < ( items.length - 1 )) {
 
-next.addEventListener("click"
-    function ()
+
+
+            // rimuovo dal div dell'img in cui suono posizionata la classe active
+            items[count].classList.remove("active");
+
+
+            // incremento il contatore dell'immagine su cui sono posizionata in questo momento
+            count++;
+            console.log(count);
+            // and aggiungo la classe active al successivo
+            items[count].classList.add("active");
+
+            if ( count === (items.length - 1)) {
+                next.classList.add("hidden");
+            }
+        }
+
+    }
 )
-if ( count < items.length ) {
-    count++;
-    
-
-}
 
 
