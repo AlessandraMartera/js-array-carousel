@@ -12,3 +12,23 @@ MILESTONE 3
 Al click dell’utente sulle frecce, il programma cambierà l’immagine attiva, che quindi verrà visualizzata al posto della precedente.
 
 */
+const next = document.querySelector(".button.next");
+const before = document.querySelector(".button.before");
+const items = document.querySelectorAll(".item");
+
+console.log(items);
+console.log(next);
+console.log(next);
+
+let count = 0;
+
+next.addEventListener("click"
+    function ()
+)
+if ( count < items.length ) {
+    count++;
+    
+
+}
+
+

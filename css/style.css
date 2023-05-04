@@ -4,6 +4,62 @@
     box-sizing: border-box;
 }
 
+/* general settings */
 img {
     width: 100%;
+}
+
+
+/* main */
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* button */
+.button {
+    width: 40px;
+    height: 40px;
+    background-color: antiquewhite;
+    border-radius: 100px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ccc;
+}
+
+.button.before {
+    top: 0; 
+    left: 50%;
+    transform: translate( -50%, -50%);
+}
+
+.button.next {
+    bottom: 5px; 
+    left: 50%;
+    transform: translate( -50%, 50%);
+}
+
+/* cotainer */
+.container {
+    width: 70%;
+    position: relative
+}
+
+/* Single item */
+.item {
+    display: none;
+}
+
+/* Utility */
+.active {
+    display: block;
+}
+
+.button:hover {
+    color: #555;
+    cursor: pointer;
 }

@@ -4,41 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- style -->
     <link rel="stylesheet" href="css/style.css">
     <title>Carousel</title>
 </head>
 <body>
 
-    <div class="container">
+    <!-- main block -->
+    <main>
 
-        <!-- img 01 -->
-        <div class="img active">
-            <img src="img/01.webp" alt="">
+        <!-- container block -->
+        <div class="container">
+
+            <div class="button before">
+                <i class="fa-solid fa-chevron-up"></i>
+            </div>
+
+            <div class="button next">
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+            
+            <!-- img 01 -->
+            <div class="item">
+                <img src="img/01.webp" alt="">
+            </div>
+    
+            <!-- img 02 -->
+            <div class="item">
+                <img src="img/02.webp" alt="">
+            </div>
+    
+            <!-- img 03 -->
+            <div class="item active">
+                <img src="img/03.webp" alt="">
+            </div>
+    
+            <!-- img 04 -->
+            <div class="item">
+                <img src="img/04.webp" alt="">
+            </div>
+    
+            <!-- img 05 -->
+            <div class="item">
+                <img src="img/05.webp" alt="">
+            </div>
+            
+
+  
         </div>
-
-        <!-- img 02 -->
-        <div class="img">
-            <img src="img/02.webp" alt="">
-        </div>
-
-        <!-- img 03 -->
-        <div class="img">
-            <img src="img/03.webp" alt="">
-        </div>
-
-        <!-- img 04 -->
-        <div class="img">
-            <img src="img/04.webp" alt="">
-        </div>
-
-        <!-- img 05 -->
-        <div class="img">
-            <img src="img/05.webp" alt="">
-        </div>
-        
-    </div>
-
+    
+    </main>
+    
     <!-- script link -->
     <script src="js/script.js"></script>
 </body>
